@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Casas rurales practica 11 Rafael Navarro Prieto" />
+	<meta name="keywords" content="Casas,Rurales,Rafael,Navarro,Prieto" />
+	<meta http-equiv="refresh" content="200" />
+	<link rel=stylesheet href="./css/normalize.css" type="text/css" />
+	<link rel=stylesheet href="./css/general.css" type="text/css" media="screen">  
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">  
+	<link rel="stylesheet" type="text/css" media="all" href="./js/calendariojs/calendar-green.css" />
+	<title>Rafael Navarro Prieto</title></head>
+<body>
+	<header>
+ 		<img src="./imagenes/logo.png" alt="logo" id="logo">		
+ 		<a id="puntosMenu" href="#menu"><p>...</p></a>
+		<nav id="menu">
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="#">¿Quienes somos?</a></li>
+				<li><a href="./inicio.html">Buscar casas</a></li>
+				<li><a href="#">Contacta con nosotros</a></li>
+				<li><a class="cerrar" href="#otro"><p>cerrar</p></a></li>
+			</ul>
+		</nav>
+	</header>
+	<form action="#">
+	<main>
+		<section id="formulario-reserva">
+		<h2>- Casa con estanque y cocina grande -</h2>
+		<p>Nombre <input type="text" name="nombre" id="nombre" pattern="[a-zA-ZáéúíóÁÉÚÍÓñÑ ]{3,100}" placeholder="nombre..." required></p>
+		<p>Apellidos <input type="text" name="apellidos" id="apellidos" pattern="[a-zA-ZáéúíóÁÉÚÍÓñÑ ]{3,100}" placeholder="apellidos..." required></p>
+		<p>Correo <input type="email" name="email" id="email" pattern="\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+" placeholder="email..." required></p>
+		<p>Teléfono <input type="tel" name="telefono" id="telefono" pattern="\d{9}" placeholder="teléfono..." required></p>
+		<p>Entrada <img src="./js/calendariojs/img.gif" id="selector" /><input type="text" name="entrada" id="entrada" placeholder="dd/mm/aaaa" pattern="\d\d/\d\d/\d\d\d\d" required></p>
+		<p>Salida <img src="./js/calendariojs/img.gif" id="selector2" /><input type="text" name="salida" id="salida" placeholder="dd/mm/aaaa" pattern="\d\d/\d\d/\d\d\d\d" required></p>
+		<p>Nº de personas <input type="number" id="personas" name="personas" placeholder="Nº Personas..." required></p>
+		<footer>
+			<input type="submit" value="Realizar reserva" name="reserva">
+			<a href="./inicio.html">
+				<input type="button" value="volver" name="volver">
+			</a>
+		</footer>
+		</section>
+	</main>
+</form>
+	<footer class="pie-page-form">
+		<ul>
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#">Aviso legal</a></li>
+			<li><a href="#">Condiciones</a></li>
+			<li><a href="#">Contacto</a></li>
+		</ul>
+		<blockquote>Created by Rafael Navarro Prieto</blockquote>
+	</footer>
+<script src="./js/calendariojs/calendar.js"></script>
+<script src="./js/calendariojs/lang/calendar-es.js"></script>
+<script src="./js/calendariojs/calendar-setup.js"></script>
+<script src="./js/calendario2.js"></script>
+<script src="./js/calendario.js"></script>
+
+</body>
+</html>

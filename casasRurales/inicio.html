@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Casas rurales practica 11 Rafael Navarro Prieto" />
+	<meta name="keywords" content="Cases,rurales,Rafael,Navarro,Prieto" />
+	<meta http-equiv="refresh" content="200" />
+	<link rel=stylesheet href="./css/normalize.css" type="text/css" />
+	<link rel=stylesheet href="./css/general.css" type="text/css" media="screen">  
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">  
+	<link rel="stylesheet" type="text/css" media="all" href="./js/calendariojs/calendar-green.css" /> 
+	<title>Rafael Navarro Prieto</title></head>
+	<script type="text/javascript" src="./js/range.js"></script>
+<body>
+	<header>
+ 		<img src="./imagenes/logo.png" alt="logo" id="logo">		
+ 		<a id="puntosMenu" href="#menu"><p>...</p></a>
+		<nav id="menu">
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="#">¿Quienes somos?</a></li>
+				<li><a href="./inicio.html">Buscar casas</a></li>
+				<li><a href="#">Contacta con nosotros</a></li>
+				<li><a class="cerrar" href="#otro"><p>cerrar</p></a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="form">
+			<article class="formulario">
+			<input type="button" value="filtro" name="filtro" id="filtro">
+			<input type="button" value="ver mapa" name="mapa" id="mapa">
+			<div class="contenido">
+				<p>Destino</p><p><input type="text" name="destino" id="destino" pattern="[A-Za-z]{3,100}" ></p>
+				<p>Nº personas</p><p><input type="number" name="personas" id="personas" pattern="[0-9]+" ></p>
+				<p>Nº habitaciones</p><p><input type="number" name="destino" id="destino" pattern="[0-9]+"></p>
+				<p>Entrada</p><p><input type="text" name="entrada" id="entrada" placeholder="dd/mm/aaaa" pattern="\d\d/\d\d/\d\d\d\d"><img src="./js/calendariojs/img.gif" id="selector" /></p>
+				<p>Salida</p><p><input type="text" name="salida" id="salida" placeholder="dd/mm/aaaa" pattern="\d\d/\d\d/\d\d\d\d"><img src="./js/calendariojs/img.gif" id="selector2" /></p>
+				<p>Precio/noche <p id="searchPrize">500€</p></p>
+				<p>0€ <input type="range" name="precio" id="precio" min="0" max="1000"> 1000€</p>
+				<hr>
+				<h3>Actividades</h3>
+				<ul>
+					<li><input type="checkbox" name="1" id="1">Jacuzzi
+					<input type="checkbox" name="2" id="2">Piragüismo
+					<input type="checkbox" name="3" id="3">Senderismo</li>
+					<li><input type="checkbox" name="4" id="4">Futbol
+					<input type="checkbox" name="5" id="5">Canoa
+					<input type="checkbox" name="6" id="6">Ruta submarina</li>
+					<li><input type="checkbox" name="7" id="7">Tirolina
+					<input type="checkbox" name="8" id="8">Barbacoa
+					<input type="checkbox" name="9" id="9">Montaña</li>
+				</ul>
+				<a href="#">
+					<input type="button" value="Buscar" id="Buscar">
+				</a>
+				<br/>
+				<br/>
+				<hr>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d50323.19562834415!2d-4.805699!3d37.972468!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4d22ae8e902daae8!2sParque+Periurbano+Los+Villares!5e0!3m2!1ses!2ses!4v1453105384614" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			</article>
+		</section>
+		<section class="casas">
+			<article>
+				<header class="cabecera-info-casa">
+					<h3>Casa con lago</h3>
+				</header>
+				<article class="info-casa">
+					<picture class="img-info">
+						<img src="./imagenes/casa1-small.png" alt="info" width="100%" >
+					</picture>
+					<div id="info">
+						<img src="./imagenes/icono.png" alt="icon" id="more">
+						<div id="info1">
+							<p>Localidad: Cabra</p>
+							<p>Habitaciones: 2</p>
+							<p><a href="">5 opiniones</a></p>
+							<p>14€/noche</p>
+						</div>
+						<div id="info2">
+							<p>Teléfono: 957562895</p>
+							<p>Domicilio: Calle me la invento nº2</p>
+							<p>nº personas: 5</p>
+						</div>
+					</div>
+				</article>
+					<footer>
+						<p class="puntiacion">Puntuación: 8.5
+						<a href="#" id="moreInfo">info</a></p>
+						<a href="./formulario.html" id="button" value="Reservar">Reservar</a>
+					</footer>
+			</article>
+			<article>
+			<header class="cabecera-info-casa">
+					<h3>Casa con gran espacio</h3>
+				</header>
+				<article class="info-casa">
+					<picture class="img-info">
+						<img src="./imagenes/casa2-small.png" alt="info" width="100%">
+					</picture>
+					<div id="info">
+					<img src="./imagenes/icono.png" alt="icon" id="more">
+					<div id="info1">
+							<p>Localidad: Baena</p>
+							<p>Habitaciones: 5</p>
+							<p><a href="">10 opiniones</a></p>
+							<p>35€/noche</p>
+						</div>
+						<div id="info2">
+							<p>Teléfono: 956214783</p>
+							<p>Domicilio: Calle me la invento nº1</p>
+							<p>nº personas: 9</p>
+						</div>
+					</div>
+				</article>
+					<footer>
+						<p class="puntiacion">Puntiacion: 7 <a href="#" id="moreInfo">info</a></p>
+						<a href="./formulario.html" id="button" value="Reservar">Reservar</a>
+					</footer>
+			</article>
+			<article>
+			<header class="cabecera-info-casa">
+					<h3>Casa con estanque y cocina grande</h3>
+				</header>
+				<article class="info-casa">
+					<picture class="img-info">
+						<img src="./imagenes/casa3-small.png" alt="info" width="100%">
+					</picture>
+					<div id="info">
+					<img src="./imagenes/icono.png" alt="icon" id="more">
+						<div id="info1">
+							<p>Localidad: Villafranca</p>
+							<p>Habitaciones: 3</p>
+							<p><a href="">7 opiniones</a></p>
+							<p>25€/noche</p>
+						</div>
+						<div id="info2">
+							<p>Teléfono: 452178963</p>
+							<p>Domicilio: Calle me la invento nº3</p>
+							<p>nº personas: 7</p>
+						</div>
+					</div>
+				</article>
+					<footer>
+						<p class="puntiacion">Puntiacion: 9.5 <a href="#" id="moreInfo">info</a></p>
+						<a href="./formulario.html" id="button" value="Reservar">Reservar</a>
+					</footer>
+			</article>
+			</article>
+			<article>
+			<header class="cabecera-info-casa">
+					<h3>Casa de montaña</h3>
+				</header>
+				<article class="info-casa">
+					<picture class="img-info">
+						<img src="./imagenes/casa1-small.png" alt="info" width="100%">
+					</picture>
+					<div id="info">
+					<img src="./imagenes/icono.png" alt="icon" id="more">
+						<div id="info1">
+							<p>Localidad: Pozoblanco</p>
+							<p>Habitaciones: 3</p>
+							<p><a href="">15 opiniones</a></p>
+							<p>45€/noche</p>
+						</div>
+						<div id="info2">
+							<p>Teléfono: 452189637</p>
+							<p>Domicilio: Calle me la invento nº4</p>
+							<p>nº personas: 6</p>
+						</div>
+					</div>
+				</article>
+					<footer>
+						<p>Puntiacion: 8 <a href="#" id="moreInfo">info</a></p>
+						<a href="./formulario.html" id="button" value="Reservar">Reservar</a>
+					</footer>
+			</article>
+			</article>
+		</section>
+	</main>
+	<footer>
+		<ul>
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#">Aviso legal</a></li>
+			<li><a href="#">Condiciones</a></li>
+			<li><a href="#">Contacto</a></li>
+		</ul>
+		<blockquote>Created by Rafael Navarro Prieto</blockquote>
+	</footer>
+<script src="./js/calendariojs/calendar.js"></script>
+<script src="./js/calendariojs/lang/calendar-es.js"></script>
+<script src="./js/calendariojs/calendar-setup.js"></script>
+<script src="./js/calendario2.js"></script>
+<script src="./js/calendario.js"></script>
+</body>
+</html>

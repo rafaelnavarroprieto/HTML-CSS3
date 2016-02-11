@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Blog practica 10 Rafael Navarro Prieto" />
+	<meta name="keywords" content="Blog,Rafael,Navarro,Prieto" />
+	<meta http-equiv="refresh" content="500" />
+	<link rel=stylesheet href="./css/normalize.css" type="text/css" />
+	<link rel=stylesheet href="./css/estilo.css" type="text/css" />
+	<title>Rafael Navarro Prieto</title>
+</head>
+<body class="notover">
+	<header id="principal">
+		<h1>Rafael Navarro Prieto</h1>
+		<nav>
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="#">Deportes</a></li>
+				<li><a href="#">Actualidad</a></li>
+				<li><a href="#">Informática</a></li>
+				<li><a href="./contacta.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+			<section id="contacta">
+				<article id="formulario">
+					<h3>Contacta con nosotros</h3>
+					<div>
+						<form action="./contacta.html" method="post">
+							<p>nombre</p></br>
+							<input type="text" name="nombre" value="" pattern="[A-Za-z]{3,}" width="5%"required >
+							<p>e-mail</p></br>
+							<input type="text" name="email" value="" width="5%" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required></br>
+							<p>mensaje</p></br>
+							<textarea name="mensaje" cols="40%" ></textarea></br></br>
+							<input type="submit" name="enviar" value="enviar" id="boton">
+						</form>
+					</div>
+				</article>
+			</section>
+		<section id="otros">
+			 <object data="./images/search.svg" type="image/svg+xml" width="20px" heigth="20px"></object>
+					<input type="search" name="buscar" placeholder="buscar...">
+			<section id="sobremi">
+				<h3>Sobre mi</h3>
+				<img src="./images/foto.png">
+				<p>Mi nombre es Rafael Navarro Prieto, tengo 24  años y estoy cursando el ciclo formativo de grado superior (Desarrollo de aplicaciones web).</p>
+			</section>
+			<aside>
+				<h3>Redes solciales</h3>
+				<ul>
+					<li><a href="#"><img src="./images/facebook29.png" alt="facebook"></a></li>
+					<li><a href="#"><img src="./images/twitter2.png" alt="twitter"></a></li>
+					<li><a href="#"><img src="./images/github10.png" alt="github"></a></li>
+				</ul>
+			</aside>
+		</section>
+
+	<footer>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Archivos</a></li>
+			<li><a href="#">Privacidad</a></li>
+			<li><a href="#">Política de uso</a></li>
+		</ul>
+		<p id="designed">Created By Rafael Navarro Prieto</p>
+	</footer>
+	
+</body>
+</html>
